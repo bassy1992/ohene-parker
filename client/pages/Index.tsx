@@ -30,10 +30,15 @@ export default function Index() {
                 Ghanaian Afro-Fusion Artist • Blending English & Twi • Cultural Storyteller
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <button className="bg-primary text-primary-foreground px-8 py-3 rounded-full hover:opacity-90 transition-opacity duration-200 flex items-center space-x-2 text-lg">
+                <a 
+                  href="https://gingridins.streamlink.to/RICKMORTY" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-primary text-primary-foreground px-8 py-3 rounded-full hover:opacity-90 transition-opacity duration-200 flex items-center space-x-2 text-lg"
+                >
                   <Play className="w-5 h-5" />
-                  <span>Listen to "Breathe"</span>
-                </button>
+                  <span>Listen to Rick and Morty</span>
+                </a>
                 <button className="border border-border text-foreground px-8 py-3 rounded-full hover:bg-accent transition-colors duration-200 text-lg">
                   View EPK
                 </button>
@@ -104,52 +109,103 @@ export default function Index() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Breathe */}
-            <div className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
-              <div className="aspect-square bg-gradient-to-br from-primary/30 to-primary/10 rounded-lg mb-4 flex items-center justify-center">
-                <Play className="w-12 h-12 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold text-card-foreground mb-2">Breathe</h3>
-              <p className="text-muted-foreground mb-3">April 2023</p>
+            {/* Follow */}
+            <div className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 group">
+              <a 
+                href="https://youtu.be/a1M1s-f3lI8?si=g7Gn5F6C1QuFnBAv" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block aspect-square rounded-lg mb-4 overflow-hidden relative cursor-pointer"
+              >
+                <img 
+                  src="/follow.jpg" 
+                  alt="Follow by Ohene Parker"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <Play className="w-12 h-12 text-white" />
+                </div>
+              </a>
+              <h3 className="text-xl font-semibold text-card-foreground mb-2">Follow</h3>
+              <p className="text-muted-foreground mb-3">Latest Release</p>
               <p className="text-sm text-muted-foreground mb-4">
-                A high-energy funk track encouraging listeners to take a moment to breathe and overcome obstacles.
+                Listen to the latest track that showcases Ohene Parker's evolving sound and artistic growth.
               </p>
-              <button className="w-full bg-primary text-primary-foreground py-2 rounded-lg hover:opacity-90 transition-opacity duration-200 flex items-center justify-center space-x-2">
+              <a 
+                href="https://fanlink.tv/oheneparkerfollow" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full bg-primary text-primary-foreground py-2 rounded-lg hover:opacity-90 transition-opacity duration-200 flex items-center justify-center space-x-2"
+              >
                 <Play className="w-4 h-4" />
                 <span>Listen Now</span>
-              </button>
+              </a>
+            </div>
+
+            {/* Rick and Morty */}
+            <div className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 group">
+              <a 
+                href="https://youtu.be/IsO1yTQ0pIU?si=axTm8Fuaj4D-Ynpv" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block aspect-square rounded-lg mb-4 overflow-hidden relative cursor-pointer"
+              >
+                <img 
+                  src="/ricky.jpg" 
+                  alt="Rick and Morty by Ohene Parker"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <Play className="w-12 h-12 text-white" />
+                </div>
+              </a>
+              <h3 className="text-xl font-semibold text-card-foreground mb-2">Rick and Morty</h3>
+              <p className="text-muted-foreground mb-3">New Single</p>
+              <p className="text-sm text-muted-foreground mb-4">
+                A creative fusion track inspired by pop culture, blending Afro-fusion with contemporary themes.
+              </p>
+              <a 
+                href="https://gingridins.streamlink.to/RICKMORTY" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full bg-primary text-primary-foreground py-2 rounded-lg hover:opacity-90 transition-opacity duration-200 flex items-center justify-center space-x-2"
+              >
+                <Play className="w-4 h-4" />
+                <span>Listen Now</span>
+              </a>
             </div>
 
             {/* Dash Card */}
-            <div className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
-              <div className="aspect-square bg-gradient-to-br from-primary/30 to-primary/10 rounded-lg mb-4 flex items-center justify-center">
-                <Play className="w-12 h-12 text-primary" />
-              </div>
+            <div className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 group">
+              <a 
+                href="https://youtu.be/qsDjyx6AfNM?si=QUq0msn1L9SAHdbi" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block aspect-square rounded-lg mb-4 overflow-hidden relative cursor-pointer"
+              >
+                <img 
+                  src="/dashcard.png" 
+                  alt="Dash Card by Ohene Parker"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <Play className="w-12 h-12 text-white" />
+                </div>
+              </a>
               <h3 className="text-xl font-semibold text-card-foreground mb-2">Dash Card</h3>
               <p className="text-muted-foreground mb-3">August 2025</p>
               <p className="text-sm text-muted-foreground mb-4">
                 An anthem about resilience and self-belief, featuring a bass-driven groove and infectious hook.
               </p>
-              <button className="w-full bg-primary text-primary-foreground py-2 rounded-lg hover:opacity-90 transition-opacity duration-200 flex items-center justify-center space-x-2">
+              <a 
+                href="https://fanlink.tv/dashcard700" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full bg-primary text-primary-foreground py-2 rounded-lg hover:opacity-90 transition-opacity duration-200 flex items-center justify-center space-x-2"
+              >
                 <Play className="w-4 h-4" />
                 <span>Listen Now</span>
-              </button>
-            </div>
-
-            {/* Grace over Babylon */}
-            <div className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
-              <div className="aspect-square bg-gradient-to-br from-primary/30 to-primary/10 rounded-lg mb-4 flex items-center justify-center">
-                <Play className="w-12 h-12 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold text-card-foreground mb-2">Grace over Babylon</h3>
-              <p className="text-muted-foreground mb-3">March 2025</p>
-              <p className="text-sm text-muted-foreground mb-4">
-                A powerful single continuing to showcase his signature Afro-fusion style and lyrical depth.
-              </p>
-              <button className="w-full bg-primary text-primary-foreground py-2 rounded-lg hover:opacity-90 transition-opacity duration-200 flex items-center justify-center space-x-2">
-                <Play className="w-4 h-4" />
-                <span>Listen Now</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>

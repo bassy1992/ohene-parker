@@ -45,10 +45,15 @@ export default function Navigation() {
             >
               Contact
             </Link>
-            <button className="bg-primary text-primary-foreground px-4 py-2 rounded-full hover:opacity-90 transition-opacity duration-200 flex items-center space-x-2">
+            <a 
+              href="https://linktr.ee/oheneparker" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-primary text-primary-foreground px-4 py-2 rounded-full hover:opacity-90 transition-opacity duration-200 flex items-center space-x-2"
+            >
               <Play className="w-4 h-4" />
               <span>Listen Now</span>
-            </button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -95,10 +100,16 @@ export default function Navigation() {
               >
                 Contact
               </Link>
-              <button className="w-full text-left bg-primary text-primary-foreground px-3 py-2 rounded-md hover:opacity-90 transition-opacity duration-200 flex items-center space-x-2">
+              <a 
+                href="https://linktr.ee/oheneparker" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full text-left bg-primary text-primary-foreground px-3 py-2 rounded-md hover:opacity-90 transition-opacity duration-200 flex items-center space-x-2"
+                onClick={toggleMenu}
+              >
                 <Play className="w-4 h-4" />
                 <span>Listen Now</span>
-              </button>
+              </a>
             </div>
           </div>
         )}
