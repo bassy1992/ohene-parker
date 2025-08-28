@@ -40,6 +40,12 @@ export default function Navigation() {
               Music
             </Link>
             <Link 
+              to="/shop" 
+              className="text-foreground hover:text-primary transition-colors duration-200"
+            >
+              Shop
+            </Link>
+            <Link 
               to="/contact" 
               className="text-foreground hover:text-primary transition-colors duration-200"
             >
@@ -92,6 +98,13 @@ export default function Navigation() {
                 onClick={toggleMenu}
               >
                 Music
+              </Link>
+              <Link
+                to="/shop"
+                className="block px-3 py-2 text-foreground hover:text-primary transition-colors duration-200"
+                onClick={toggleMenu}
+              >
+                Shop
               </Link>
               <Link
                 to="/contact"
